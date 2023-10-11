@@ -12,17 +12,20 @@ export const HeroPage = () => {
   
   return (
     <>
-    <div className="row mt-5 ">
-    <div className="col-4">
-      <h1  >{hero.superhero}</h1>
-      <hr/>
-      <p>{hero.alter_ego}</p>
-      <p>{hero.first_appearance}</p>
-      <p>{hero.characters}</p>
-      <img src={`../assets/heroes/${heroid}.jpg`} alt={hero.superhero} />
-      </div>
-    </div>
+<div className= {hero.publisher == 'DC Comics' ? 'row mt-5 heroDC' : 'row mt-5  heroMarvel'}>
+  <div className="col-3 ms-5">
+    <img src={`../assets/heroes/${heroid}.jpg`} alt={hero.superhero} className="img-thumbnail"/>
+  </div>
 
-    </>
+  <div className="col-2 ms-5">
+    <h3>{hero.superhero}</h3>
+    <ul className="list-group list-group-flush ">
+      <li className="list-group-item carat">{hero.alter_ego}</li>
+      <li className="list-group-item">{hero.publisher}</li>
+      <li className="list-group-item">{hero.first_appearance}</li>
+    </ul>
+  </div>
+</div>
+</>
   )
 }

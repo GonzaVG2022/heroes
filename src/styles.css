@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;    
+    /* background-color: #000; */
+}
+/* MARVEL */
+div .marvel{
+    text-align: center;
+    
+}
+div .marvel h1{
+    background:red;
+    color:white;
+    border: 3px solid #fff;
+    margin: 1px;
+}
+
+.marvel{
+    background-color: black;
+    
+}
+.marvel .gon{
+    background-color: red; 
+    margin-left: 10px;  
+}
+.marvel .gon h3{
+    color: white;
+    
+}
+.marvel p, p small, a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* DC */
+div .DC{
+    text-align: center;
+    
+}
+div .DC h1{
+    background:lightblue;
+    color:white;
+    border: 3px solid #fff;
+    margin: 1px;
+}
+.DC{
+    background-color: black;
+}
+.DC{
+    background-color: black;
+    
+}
+.DC .gon{
+    background-color: lightblue; 
+    margin-left: 10px;  
+}
+.DC .gon h3{
+    color: white;
+    
+}
+.DC p, p small, a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* heroDC */
+.heroDC {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .heroDC .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .heroDC h3 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  
+  .heroDC .list-group-item {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #f5f5f5;  }
+  
+  .heroDC .list-group-item.carat {
+    font-weight: bold;
+    
+  }
+  
+  .heroDC .list-group-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;  }
