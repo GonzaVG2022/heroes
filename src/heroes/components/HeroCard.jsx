@@ -12,11 +12,11 @@ export const HeroCard = ({
 }) => {
   
   return (
-    <div className={publisher == 'DC Comics' ? 'col DC' : 'col Marvel'}>
-        <div  className="card mb-3 gon">
-            <div className="row no-gutters">
-                <div className="col-md-6">
-                    <img src={`../assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
+    <div className={publisher == 'DC Comics' ? 'col DC animate__animated animate__fadeIn' : 'col Marvel animate__animated animate__fadeIn'}>
+        <div  className="card mb-3 gon ">
+            <div className="row no-gutters animate__animated animate__bounce">
+                <div className="col-md-6 ">
+                    <img src={`../assets/heroes/${id}.jpg`} className="card-img" style={{ maxHeight: '680px' }} alt={superhero} />
                 </div>
                 <div className="col-md-6">
                     <div className="card-body">
