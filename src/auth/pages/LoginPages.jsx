@@ -19,7 +19,7 @@ export const LoginPage = () => {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 login">
       <h1>Login</h1>
       <hr />
 
