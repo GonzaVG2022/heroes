@@ -3,9 +3,10 @@ import { getHeroById } from "../helpers";
 import { useMemo } from "react";
 
 export const HeroPage = () => {
-  const {heroid} = useParams();
+  const {id} = useParams();
   
-  const hero = useMemo( () => getHeroById(heroid), [heroid]);
+  const hero = useMemo( () => getHeroById(id), [id]);
+  console.log(id)
   const navigate = useNavigate();
   const onNavigateback = () => {
     navigate(-1);
@@ -18,7 +19,7 @@ export const HeroPage = () => {
     <>
 <div className= {hero.publisher == 'DC Comics' ? 'row mt-5 heroDC animate__animated animate__fadeInLeft' : 'row mt-5  heroMarvel animate__animated animate__fadeInLeft'}>
   <div className="col-3 ms-5">
-    <img src={`../assets/heroes/${heroid}.jpg`} alt={hero.superhero} className="img-thumbnail"/>
+    <img src={`../assets/heroes/${id}.jpg`} alt={hero.superhero} className="img-thumbnail"/>
   </div>
 
   <div className="col-2 ms-5">
