@@ -1,10 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
-import { PublicRoute } from './PublicRoute';
+
+import { HeroesRoutes } from '../heroes';
 import { LoginPage } from '../auth';
 import { PrivateRoute } from './PrivateRoute';
-import { HeroesRoutes } from '../heroes/routes/HeroesRoutes';
-
-
+import { PublicRoute } from './PublicRoute';
 
 
 
@@ -14,11 +13,11 @@ export const AppRouter = () => {
 
         <Routes>
             
-            <Route path="/login" element={
+            <Route path="login/*" element={
                 <PublicRoute>
                   {/* <LoginPage /> */}
                   <Routes>
-                    <Route path="/" element={<LoginPage />} />
+                    <Route path="/*" element={<LoginPage />} />
                   </Routes>
                 </PublicRoute>
               }
