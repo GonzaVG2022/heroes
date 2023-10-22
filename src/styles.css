@@ -9,18 +9,18 @@ div .marvel{
     
 }
 div .marvel h1{
-    background:red;
+    background:#000;
     color:white;
     border: 3px solid #fff;
     margin: 1px;
 }
 
 .marvel{
-    background-color: black;
+    background-color: #f00;
     
 }
 .marvel .gon{
-    background-color: red; 
+    background-color: #000; 
     margin-left: 10px;  
 }
 .marvel .gon h3{
